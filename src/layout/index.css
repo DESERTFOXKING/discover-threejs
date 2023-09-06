@@ -1,0 +1,33 @@
+.wrap {
+  display: flex;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  /* margin-top: 80px; */
+}
+
+.sidebar {
+  position: sticky;
+  top: 80px;
+  flex-shrink: 0;
+  width: 16%;
+  height: 100%;
+  max-height: calc(100vh - 104px);
+  padding: 40px;
+  overflow: hidden;
+  border-right: 1px solid #B9DCF7;
+}
+
+.container {
+  flex: auto;
+  width: 84%;
+}
+
+.fadeout {
+  -webkit-mask-image: linear-gradient(to bottom,transparent 0%,black 10%,black 80%,transparent 100%);
+  mask-image: linear-gradient(to bottom,transparent 0%,black 10%,black 80%,transparent 100%);
+}
